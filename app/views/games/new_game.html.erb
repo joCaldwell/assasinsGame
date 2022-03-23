@@ -1,0 +1,23 @@
+<div class="container">
+  <h1> create a game </h1>
+  <%= form_with model: @game, method: 'post', class: "form" do |form| %>
+    <div class="row">
+      <%= form.label :games, "Game Code", class: "col-3 formlabel" %>
+      <%= form.text_field :game_code, class: "formtext" %>
+    </div>
+
+  <%= fields_for :player do |creatorF| %>
+    <div class="row">
+      <%= creatorF.label :player, "Name", class: "col-3 formlabel" %>
+      <%= creatorF.text_field :name, class: "formtext" %>
+    </div>
+    <div class="row">
+      <%= creatorF.label :player, "Password", class: "col-3 formlabel" %>
+      <%= creatorF.text_field :password, class: "formtext" %>
+    </div>
+  <% end %>
+  <div class="position-relative">
+  <%= form.submit "submit", class: "link position-absolute top-0 start-50 translate-middle-x" %>
+  </div>
+  <% end %>
+</div>

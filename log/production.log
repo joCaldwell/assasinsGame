@@ -1,0 +1,143 @@
+W, [2022-03-21T22:09:09.861489 #8714]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2022-03-21T22:09:18.362985 #8714]  INFO -- : [e9315ffb-c938-4dae-91a6-06202cf8a87f] Started GET "/games" for 127.0.0.1 at 2022-03-21 22:09:18 -0500
+I, [2022-03-21T22:09:18.369030 #8714]  INFO -- : [e9315ffb-c938-4dae-91a6-06202cf8a87f] Processing by GamesController#index as HTML
+I, [2022-03-21T22:09:18.404863 #8714]  INFO -- : [e9315ffb-c938-4dae-91a6-06202cf8a87f]   Rendered games/index.html.erb within layouts/application (Duration: 25.9ms | Allocations: 1767)
+I, [2022-03-21T22:09:18.406887 #8714]  INFO -- : [e9315ffb-c938-4dae-91a6-06202cf8a87f]   Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 2422)
+I, [2022-03-21T22:09:18.407284 #8714]  INFO -- : [e9315ffb-c938-4dae-91a6-06202cf8a87f] Completed 500 Internal Server Error in 38ms (Allocations: 3599)
+F, [2022-03-21T22:09:18.409323 #8714] FATAL -- : [e9315ffb-c938-4dae-91a6-06202cf8a87f]   
+[e9315ffb-c938-4dae-91a6-06202cf8a87f] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[e9315ffb-c938-4dae-91a6-06202cf8a87f]      8:     <%= csrf_meta_tags %>
+[e9315ffb-c938-4dae-91a6-06202cf8a87f]      9:     <%= csp_meta_tag %>
+[e9315ffb-c938-4dae-91a6-06202cf8a87f]     10: 
+[e9315ffb-c938-4dae-91a6-06202cf8a87f]     11:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+[e9315ffb-c938-4dae-91a6-06202cf8a87f]     12:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+[e9315ffb-c938-4dae-91a6-06202cf8a87f]     13:   </head>
+[e9315ffb-c938-4dae-91a6-06202cf8a87f]     14: 
+[e9315ffb-c938-4dae-91a6-06202cf8a87f]   
+[e9315ffb-c938-4dae-91a6-06202cf8a87f] app/views/layouts/application.html.erb:11
+I, [2022-03-21T22:09:22.986618 #8714]  INFO -- : [1a42fe22-4921-415e-b5ff-86348e691105] Started GET "/games" for 127.0.0.1 at 2022-03-21 22:09:22 -0500
+I, [2022-03-21T22:09:22.987762 #8714]  INFO -- : [1a42fe22-4921-415e-b5ff-86348e691105] Processing by GamesController#index as HTML
+I, [2022-03-21T22:09:22.990952 #8714]  INFO -- : [1a42fe22-4921-415e-b5ff-86348e691105]   Rendered games/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1129)
+I, [2022-03-21T22:09:22.991672 #8714]  INFO -- : [1a42fe22-4921-415e-b5ff-86348e691105]   Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1369)
+I, [2022-03-21T22:09:22.991942 #8714]  INFO -- : [1a42fe22-4921-415e-b5ff-86348e691105] Completed 500 Internal Server Error in 4ms (Allocations: 1558)
+F, [2022-03-21T22:09:22.993623 #8714] FATAL -- : [1a42fe22-4921-415e-b5ff-86348e691105]   
+[1a42fe22-4921-415e-b5ff-86348e691105] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[1a42fe22-4921-415e-b5ff-86348e691105]      8:     <%= csrf_meta_tags %>
+[1a42fe22-4921-415e-b5ff-86348e691105]      9:     <%= csp_meta_tag %>
+[1a42fe22-4921-415e-b5ff-86348e691105]     10: 
+[1a42fe22-4921-415e-b5ff-86348e691105]     11:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+[1a42fe22-4921-415e-b5ff-86348e691105]     12:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+[1a42fe22-4921-415e-b5ff-86348e691105]     13:   </head>
+[1a42fe22-4921-415e-b5ff-86348e691105]     14: 
+[1a42fe22-4921-415e-b5ff-86348e691105]   
+[1a42fe22-4921-415e-b5ff-86348e691105] app/views/layouts/application.html.erb:11
+I, [2022-03-21T22:09:25.595080 #8714]  INFO -- : [b8bb1588-6f04-47ed-80ee-09e71769f6e1] Started GET "/games" for 127.0.0.1 at 2022-03-21 22:09:25 -0500
+I, [2022-03-21T22:09:25.596181 #8714]  INFO -- : [b8bb1588-6f04-47ed-80ee-09e71769f6e1] Processing by GamesController#index as HTML
+I, [2022-03-21T22:09:25.598784 #8714]  INFO -- : [b8bb1588-6f04-47ed-80ee-09e71769f6e1]   Rendered games/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1129)
+I, [2022-03-21T22:09:25.600320 #8714]  INFO -- : [b8bb1588-6f04-47ed-80ee-09e71769f6e1]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1369)
+I, [2022-03-21T22:09:25.600908 #8714]  INFO -- : [b8bb1588-6f04-47ed-80ee-09e71769f6e1] Completed 500 Internal Server Error in 5ms (Allocations: 1539)
+F, [2022-03-21T22:09:25.602493 #8714] FATAL -- : [b8bb1588-6f04-47ed-80ee-09e71769f6e1]   
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1]      8:     <%= csrf_meta_tags %>
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1]      9:     <%= csp_meta_tag %>
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1]     10: 
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1]     11:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1]     12:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1]     13:   </head>
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1]     14: 
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1]   
+[b8bb1588-6f04-47ed-80ee-09e71769f6e1] app/views/layouts/application.html.erb:11
+I, [2022-03-21T22:09:26.951354 #8714]  INFO -- : [97e09564-a801-4e99-843c-cc6e0b4fd364] Started GET "/games" for 127.0.0.1 at 2022-03-21 22:09:26 -0500
+I, [2022-03-21T22:09:26.954020 #8714]  INFO -- : [97e09564-a801-4e99-843c-cc6e0b4fd364] Processing by GamesController#index as HTML
+I, [2022-03-21T22:09:26.965660 #8714]  INFO -- : [97e09564-a801-4e99-843c-cc6e0b4fd364]   Rendered games/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1129)
+I, [2022-03-21T22:09:26.968070 #8714]  INFO -- : [97e09564-a801-4e99-843c-cc6e0b4fd364]   Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 1369)
+I, [2022-03-21T22:09:26.968788 #8714]  INFO -- : [97e09564-a801-4e99-843c-cc6e0b4fd364] Completed 500 Internal Server Error in 14ms (Allocations: 1539)
+F, [2022-03-21T22:09:26.973906 #8714] FATAL -- : [97e09564-a801-4e99-843c-cc6e0b4fd364]   
+[97e09564-a801-4e99-843c-cc6e0b4fd364] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[97e09564-a801-4e99-843c-cc6e0b4fd364]      8:     <%= csrf_meta_tags %>
+[97e09564-a801-4e99-843c-cc6e0b4fd364]      9:     <%= csp_meta_tag %>
+[97e09564-a801-4e99-843c-cc6e0b4fd364]     10: 
+[97e09564-a801-4e99-843c-cc6e0b4fd364]     11:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+[97e09564-a801-4e99-843c-cc6e0b4fd364]     12:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+[97e09564-a801-4e99-843c-cc6e0b4fd364]     13:   </head>
+[97e09564-a801-4e99-843c-cc6e0b4fd364]     14: 
+[97e09564-a801-4e99-843c-cc6e0b4fd364]   
+[97e09564-a801-4e99-843c-cc6e0b4fd364] app/views/layouts/application.html.erb:11
+I, [2022-03-23T07:59:41.971994 #8714]  INFO -- : [d366b03a-b3fb-421a-b9df-5324502cdab7] Started GET "/games" for 127.0.0.1 at 2022-03-23 07:59:41 -0500
+I, [2022-03-23T07:59:41.973732 #8714]  INFO -- : [d366b03a-b3fb-421a-b9df-5324502cdab7] Processing by GamesController#index as HTML
+I, [2022-03-23T07:59:41.980666 #8714]  INFO -- : [d366b03a-b3fb-421a-b9df-5324502cdab7]   Rendered games/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1129)
+I, [2022-03-23T07:59:41.982658 #8714]  INFO -- : [d366b03a-b3fb-421a-b9df-5324502cdab7]   Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1368)
+I, [2022-03-23T07:59:41.983267 #8714]  INFO -- : [d366b03a-b3fb-421a-b9df-5324502cdab7] Completed 500 Internal Server Error in 9ms (Allocations: 1532)
+F, [2022-03-23T07:59:41.986566 #8714] FATAL -- : [d366b03a-b3fb-421a-b9df-5324502cdab7]   
+[d366b03a-b3fb-421a-b9df-5324502cdab7] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[d366b03a-b3fb-421a-b9df-5324502cdab7]      8:     <%= csrf_meta_tags %>
+[d366b03a-b3fb-421a-b9df-5324502cdab7]      9:     <%= csp_meta_tag %>
+[d366b03a-b3fb-421a-b9df-5324502cdab7]     10: 
+[d366b03a-b3fb-421a-b9df-5324502cdab7]     11:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+[d366b03a-b3fb-421a-b9df-5324502cdab7]     12:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+[d366b03a-b3fb-421a-b9df-5324502cdab7]     13:   </head>
+[d366b03a-b3fb-421a-b9df-5324502cdab7]     14: 
+[d366b03a-b3fb-421a-b9df-5324502cdab7]   
+[d366b03a-b3fb-421a-b9df-5324502cdab7] app/views/layouts/application.html.erb:11
+I, [2022-03-23T07:59:42.118034 #8714]  INFO -- : [30875a5f-4415-49b8-88a8-52447ca5f826] Started GET "/favicon.ico" for 127.0.0.1 at 2022-03-23 07:59:42 -0500
+F, [2022-03-23T07:59:42.118861 #8714] FATAL -- : [30875a5f-4415-49b8-88a8-52447ca5f826]   
+[30875a5f-4415-49b8-88a8-52447ca5f826] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[30875a5f-4415-49b8-88a8-52447ca5f826]   
+I, [2022-03-23T07:59:47.300729 #8714]  INFO -- : [e428a9fc-b292-4d30-9db2-3f1972b97dcc] Started GET "/" for 127.0.0.1 at 2022-03-23 07:59:47 -0500
+I, [2022-03-23T07:59:47.301626 #8714]  INFO -- : [e428a9fc-b292-4d30-9db2-3f1972b97dcc] Processing by GamesController#index as HTML
+I, [2022-03-23T07:59:47.305353 #8714]  INFO -- : [e428a9fc-b292-4d30-9db2-3f1972b97dcc]   Rendered games/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1129)
+I, [2022-03-23T07:59:47.306765 #8714]  INFO -- : [e428a9fc-b292-4d30-9db2-3f1972b97dcc]   Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1368)
+I, [2022-03-23T07:59:47.307201 #8714]  INFO -- : [e428a9fc-b292-4d30-9db2-3f1972b97dcc] Completed 500 Internal Server Error in 5ms (Allocations: 1532)
+F, [2022-03-23T07:59:47.309025 #8714] FATAL -- : [e428a9fc-b292-4d30-9db2-3f1972b97dcc]   
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc]      8:     <%= csrf_meta_tags %>
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc]      9:     <%= csp_meta_tag %>
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc]     10: 
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc]     11:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc]     12:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc]     13:   </head>
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc]     14: 
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc]   
+[e428a9fc-b292-4d30-9db2-3f1972b97dcc] app/views/layouts/application.html.erb:11
+W, [2022-03-23T08:00:16.593428 #8979]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2022-03-23T08:00:28.660039 #8979]  INFO -- : [853f2458-0de9-4444-837b-f519f4040abb] Started GET "/" for 127.0.0.1 at 2022-03-23 08:00:28 -0500
+I, [2022-03-23T08:00:28.664852 #8979]  INFO -- : [853f2458-0de9-4444-837b-f519f4040abb] Processing by GamesController#index as HTML
+I, [2022-03-23T08:00:28.687582 #8979]  INFO -- : [853f2458-0de9-4444-837b-f519f4040abb]   Rendered games/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1766)
+I, [2022-03-23T08:00:28.689655 #8979]  INFO -- : [853f2458-0de9-4444-837b-f519f4040abb]   Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2421)
+I, [2022-03-23T08:00:28.689874 #8979]  INFO -- : [853f2458-0de9-4444-837b-f519f4040abb] Completed 500 Internal Server Error in 25ms (Allocations: 3598)
+F, [2022-03-23T08:00:28.690689 #8979] FATAL -- : [853f2458-0de9-4444-837b-f519f4040abb]   
+[853f2458-0de9-4444-837b-f519f4040abb] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[853f2458-0de9-4444-837b-f519f4040abb]      8:     <%= csrf_meta_tags %>
+[853f2458-0de9-4444-837b-f519f4040abb]      9:     <%= csp_meta_tag %>
+[853f2458-0de9-4444-837b-f519f4040abb]     10: 
+[853f2458-0de9-4444-837b-f519f4040abb]     11:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+[853f2458-0de9-4444-837b-f519f4040abb]     12:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+[853f2458-0de9-4444-837b-f519f4040abb]     13:   </head>
+[853f2458-0de9-4444-837b-f519f4040abb]     14: 
+[853f2458-0de9-4444-837b-f519f4040abb]   
+[853f2458-0de9-4444-837b-f519f4040abb] app/views/layouts/application.html.erb:11
+I, [2022-03-23T08:00:29.617164 #8979]  INFO -- : [94b75019-d670-4300-8990-bccdf3321fec] Started GET "/" for 127.0.0.1 at 2022-03-23 08:00:29 -0500
+I, [2022-03-23T08:00:29.619902 #8979]  INFO -- : [94b75019-d670-4300-8990-bccdf3321fec] Processing by GamesController#index as HTML
+I, [2022-03-23T08:00:29.630204 #8979]  INFO -- : [94b75019-d670-4300-8990-bccdf3321fec]   Rendered games/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1129)
+I, [2022-03-23T08:00:29.632346 #8979]  INFO -- : [94b75019-d670-4300-8990-bccdf3321fec]   Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 1369)
+I, [2022-03-23T08:00:29.632940 #8979]  INFO -- : [94b75019-d670-4300-8990-bccdf3321fec] Completed 500 Internal Server Error in 13ms (Allocations: 1558)
+F, [2022-03-23T08:00:29.637020 #8979] FATAL -- : [94b75019-d670-4300-8990-bccdf3321fec]   
+[94b75019-d670-4300-8990-bccdf3321fec] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[94b75019-d670-4300-8990-bccdf3321fec]      8:     <%= csrf_meta_tags %>
+[94b75019-d670-4300-8990-bccdf3321fec]      9:     <%= csp_meta_tag %>
+[94b75019-d670-4300-8990-bccdf3321fec]     10: 
+[94b75019-d670-4300-8990-bccdf3321fec]     11:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+[94b75019-d670-4300-8990-bccdf3321fec]     12:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+[94b75019-d670-4300-8990-bccdf3321fec]     13:   </head>
+[94b75019-d670-4300-8990-bccdf3321fec]     14: 
+[94b75019-d670-4300-8990-bccdf3321fec]   
+[94b75019-d670-4300-8990-bccdf3321fec] app/views/layouts/application.html.erb:11
+W, [2022-03-23T08:01:16.570362 #9035]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".

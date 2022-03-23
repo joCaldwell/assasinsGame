@@ -1,0 +1,47 @@
+<!-- list of players while inactive -->
+<div class="container showpage">
+<%- unless @game[:is_active] then %>
+  <h2> Players </h2>
+  <ul>
+    <% for player in @players do %>
+      <li>
+        <%= player[:name] %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<!-- UI while game is active -->
+<%- if @game[:is_active] then %>
+
+  <h2> <%= "Welcome #{@player[:name]}" %> </h2>
+
+  <%- if @target != @player %>
+    <h3> <%= "Your Target Is #{@target[:name]}" %> </h3>
+  <%- else %>
+    <h3> You Have Won Click The Button Below To End The Game </h3>
+    <%= button_to "DELETE GAME", action: "delete", remote: true %>
+  <% end %>
+
+  <%- if Killrequest.find_by(game_id: @game[:id], victim_id: @player[:id]) %>
+    <%= button_to "I've been Killed", action: "die", remote: true %>
+  <% end %>
+
+  <%= button_to "I Killed My Target", action: "kill", remote: true %>
+
+<% end %>
+
+<!-- Creator game controls -->
+<%- if @creator %>
+  <%- if session[:current_player_id] == @creator[:id] then %>
+    <div>
+      <!-- inactive game controls -->
+      <%- unless @game[:is_active] then %>
+        <%= button_to "START GAME", action: "start", remote: true %>
+      <% end %>
+      <!-- always active game controls -->
+      <%= button_to "DELETE GAME", action: "delete", remote: true %>
+    </div>
+  <% end %>
+<% end %>
+</div>

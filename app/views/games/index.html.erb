@@ -1,0 +1,16 @@
+
+<div class="bg-dark text-light mx-auto text-center welcomebox">
+  <h1 class="mx-auto welcometext">WELCOME ASSASSINS</h1>
+</div>
+
+<div class="text-center links row">
+  <div class="col-sm">
+    <%= button_to "Join Game", "/games/join/", method: "get", class: "link", id: "homelink" %> <br/> 
+  </div>
+  <div class="col-sm">
+    <%= button_to "Create a Game", "/games/new_game/", method: "get", class: "link", id: "homelink" %> 
+  </div>
+</div>
+
+<%= button_to "clear session data", 'game/clear', class: "bottom-0 position-absolute end-0" %>
+

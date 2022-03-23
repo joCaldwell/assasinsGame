@@ -1,0 +1,5 @@
+<%= form_with model: @game, method: 'post' do |form| %>
+  <%= form.label :games, :game_code %>
+  <%= form.text_field :game_code %>
+  <%= form.submit "submit" %>
+<% end %>

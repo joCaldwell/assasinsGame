@@ -1,0 +1,16 @@
+<div class="container">
+<h1> SIGNUP/LOGIN </h1>
+  <%= form_with model: @player, method: 'post', class: "form" do |form| %>
+  <div class="row">
+    <%= form.label :player, "Name", class: "col-3 formlabel" %>
+    <%= form.text_field :name, class: "col-7 formtext" %>
+  </div>
+  <div class="row">
+    <%= form.label :player, "Password", class: "col-3 formlabel" %>
+    <%= form.text_field :password, class: "col-7 formtext" %>
+  </div>
+  <div class="row">
+    <%= form.submit "submit" %>
+  </div>
+  <% end %>
+</div>

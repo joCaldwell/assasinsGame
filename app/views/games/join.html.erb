@@ -1,0 +1,27 @@
+<div class="showpage container">
+<h1> Enter a Game Below</h1>
+
+<ul>
+  <% @games = Game.all %>
+  <% @active_games = Array[] %>
+  <% for game in @games do
+      if game[:is_active]
+        @active_games.push(game) %>
+    <% end %>
+  <% end %>
+  <div class="row justify-content-start">
+  <% for game in @active_games do %>
+    <div class="col-4">
+    <%= button_to game[:game_code], { action: "enter" }, class: "link", id: "gamelink", params: { game_code: game[:game_code] } %> 
+    </div>
+  <% end %>
+  </div>
+</ul>
+
+<%= form_with model: @game, method: 'post', class: "form" do |form| %>
+  <%= form.label :games, :game_code, class: "formlabel" %>
+  <%= form.text_field :game_code, class: "formtext" %>
+  <%= form.submit "submit" %>
+<% end %>
+</div>
+
