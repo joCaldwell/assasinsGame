@@ -10,7 +10,7 @@ class GamesController < ApplicationController
     # check if the gameid is unique
     if Game.find_by game_code: @game[:game_code] then
       flash[:alert] = "Game Code Taken"
-      render "games/new_game"
+      redirect_to "games/new_game"
       return
     else
       @game.save!
@@ -54,8 +54,8 @@ class GamesController < ApplicationController
       session[:current_game_id] = @game[:id]
       redirect_to "/games/#{@game[:id]}/signup"
     else
-      flash.now[:alert] = "Game Not Found"
-      render "/games/join"
+      flash[:alert] = "Game Not Found"
+      redirect_to "/games/join"
     end
   end
 

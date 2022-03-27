@@ -11,8 +11,8 @@ class PlayersController < ApplicationController
         session[:current_player_id] = @currentplayer[:id]
         redirect_to "/games/#{@game[:id]}"
       else
-        flash.now[:alert] = "Incorrect password / Name in use"
-        render "games/signup"
+        flash[:alert] = "Incorrect password / Name in use"
+        redirect_to "games/signup"
       end
     elsif not @game[:is_active] then
 #create a player if does not exist and game is inactive
@@ -20,8 +20,8 @@ class PlayersController < ApplicationController
       session[:current_player_id] = @player[:id]
       redirect_to "/games/#{@game[:id]}"
     else
-      flash.now[:alert] = "Incorrect name / can't create new player while game is active"
-      render "games/signup"
+      flash[:alert] = "Incorrect name / can't create new player while game is active"
+      redirect_to "games/signup"
     end
   end
 end
