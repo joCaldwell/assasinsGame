@@ -141,3 +141,182 @@ F, [2022-03-23T08:00:29.637020 #8979] FATAL -- : [94b75019-d670-4300-8990-bccdf3
 [94b75019-d670-4300-8990-bccdf3321fec]   
 [94b75019-d670-4300-8990-bccdf3321fec] app/views/layouts/application.html.erb:11
 W, [2022-03-23T08:01:16.570362 #9035]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2022-03-27T17:10:16.632612 #172244]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2022-03-27T17:10:16.676012 #172244]  INFO -- : Migrating to CreateGames (20220218220314)
+W, [2022-03-27T17:11:00.359221 #172281]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2022-03-27T17:11:00.831694 #172327]  INFO -- : [014498ed-3907-42eb-8bec-049c9711355b] Started GET "/" for 216.245.221.82 at 2022-03-27 17:11:00 +0000
+I, [2022-03-27T17:11:00.835222 #172327]  INFO -- : [014498ed-3907-42eb-8bec-049c9711355b] Processing by GamesController#index as HTML
+I, [2022-03-27T17:11:00.846377 #172327]  INFO -- : [014498ed-3907-42eb-8bec-049c9711355b]   Rendered games/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 840)
+I, [2022-03-27T17:11:00.850316 #172327]  INFO -- : [014498ed-3907-42eb-8bec-049c9711355b]   Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2058)
+I, [2022-03-27T17:11:00.850897 #172327]  INFO -- : [014498ed-3907-42eb-8bec-049c9711355b] Completed 200 OK in 15ms (Views: 13.0ms | Allocations: 3276)
+W, [2022-03-27T17:11:24.657277 #172450]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2022-03-27T17:11:25.033957 #172496]  INFO -- : [750fef3d-941a-4fed-83a3-f8310bd2089d] Started GET "/" for 136.37.148.102 at 2022-03-27 17:11:25 +0000
+I, [2022-03-27T17:11:25.037431 #172496]  INFO -- : [750fef3d-941a-4fed-83a3-f8310bd2089d] Processing by GamesController#index as HTML
+I, [2022-03-27T17:11:25.049184 #172496]  INFO -- : [750fef3d-941a-4fed-83a3-f8310bd2089d]   Rendered games/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 966)
+I, [2022-03-27T17:11:25.052934 #172496]  INFO -- : [750fef3d-941a-4fed-83a3-f8310bd2089d]   Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 2184)
+I, [2022-03-27T17:11:25.053451 #172496]  INFO -- : [750fef3d-941a-4fed-83a3-f8310bd2089d] Completed 200 OK in 16ms (Views: 14.1ms | Allocations: 3402)
+I, [2022-03-27T17:11:27.366222 #172496]  INFO -- : [045ce6ab-e9af-4f28-a2dc-cc41830fefb1] Started GET "/dispatch.asp" for 103.178.236.95 at 2022-03-27 17:11:27 +0000
+F, [2022-03-27T17:11:27.367440 #172496] FATAL -- : [045ce6ab-e9af-4f28-a2dc-cc41830fefb1]   
+[045ce6ab-e9af-4f28-a2dc-cc41830fefb1] ActionController::RoutingError (No route matches [GET] "/dispatch.asp"):
+[045ce6ab-e9af-4f28-a2dc-cc41830fefb1]   
+I, [2022-03-27T17:11:31.504720 #172496]  INFO -- : [369f659a-0687-4c25-bd1b-fa2a3e351266] Started GET "/games/new_game/" for 136.37.148.102 at 2022-03-27 17:11:31 +0000
+I, [2022-03-27T17:11:31.506569 #172496]  INFO -- : [369f659a-0687-4c25-bd1b-fa2a3e351266] Processing by GamesController#new_game as HTML
+I, [2022-03-27T17:11:31.541768 #172496]  INFO -- : [369f659a-0687-4c25-bd1b-fa2a3e351266]   Rendered games/new_game.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1388)
+I, [2022-03-27T17:11:31.542890 #172496]  INFO -- : [369f659a-0687-4c25-bd1b-fa2a3e351266]   Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1769)
+I, [2022-03-27T17:11:31.543212 #172496]  INFO -- : [369f659a-0687-4c25-bd1b-fa2a3e351266] Completed 200 OK in 36ms (Views: 6.4ms | ActiveRecord: 3.3ms | Allocations: 10109)
+I, [2022-03-27T17:11:40.893062 #172496]  INFO -- : [5b52d12e-65d2-4f2f-b253-7afdaf633b62] Started POST "/games" for 136.37.148.102 at 2022-03-27 17:11:40 +0000
+I, [2022-03-27T17:11:40.894790 #172496]  INFO -- : [5b52d12e-65d2-4f2f-b253-7afdaf633b62] Processing by GamesController#create as TURBO_STREAM
+I, [2022-03-27T17:11:40.894915 #172496]  INFO -- : [5b52d12e-65d2-4f2f-b253-7afdaf633b62]   Parameters: {"authenticity_token"=>"[FILTERED]", "game"=>{"game_code"=>"onxc2022"}, "player"=>{"name"=>"1", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+I, [2022-03-27T17:11:40.901725 #172496]  INFO -- : [5b52d12e-65d2-4f2f-b253-7afdaf633b62] Redirected to 
+I, [2022-03-27T17:11:40.902093 #172496]  INFO -- : [5b52d12e-65d2-4f2f-b253-7afdaf633b62] Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms | Allocations: 1662)
+F, [2022-03-27T17:11:40.902914 #172496] FATAL -- : [5b52d12e-65d2-4f2f-b253-7afdaf633b62]   
+[5b52d12e-65d2-4f2f-b253-7afdaf633b62] ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://www.assassinshub.comgames/new_game", pass allow_other_host: true to redirect anyway.):
+[5b52d12e-65d2-4f2f-b253-7afdaf633b62]   
+[5b52d12e-65d2-4f2f-b253-7afdaf633b62] app/controllers/games_controller.rb:13:in `create'
+I, [2022-03-27T17:12:33.060383 #172496]  INFO -- : [aebc9c8a-f096-45bc-9436-e31d642dcdda] Started GET "/games/new_game/" for 136.37.148.102 at 2022-03-27 17:12:33 +0000
+I, [2022-03-27T17:12:33.061945 #172496]  INFO -- : [aebc9c8a-f096-45bc-9436-e31d642dcdda] Processing by GamesController#new_game as HTML
+I, [2022-03-27T17:12:33.064708 #172496]  INFO -- : [aebc9c8a-f096-45bc-9436-e31d642dcdda]   Rendered games/new_game.html.erb within layouts/application (Duration: 1.6ms | Allocations: 642)
+I, [2022-03-27T17:12:33.065637 #172496]  INFO -- : [aebc9c8a-f096-45bc-9436-e31d642dcdda]   Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 993)
+I, [2022-03-27T17:12:33.065974 #172496]  INFO -- : [aebc9c8a-f096-45bc-9436-e31d642dcdda] Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1252)
+I, [2022-03-27T17:12:41.585302 #172496]  INFO -- : [26033729-1a02-4ab0-a547-43e5b27668f0] Started GET "/games" for 136.37.148.102 at 2022-03-27 17:12:41 +0000
+I, [2022-03-27T17:12:41.586541 #172496]  INFO -- : [26033729-1a02-4ab0-a547-43e5b27668f0] Processing by GamesController#index as HTML
+I, [2022-03-27T17:12:41.588046 #172496]  INFO -- : [26033729-1a02-4ab0-a547-43e5b27668f0]   Rendered games/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 335)
+I, [2022-03-27T17:12:41.588920 #172496]  INFO -- : [26033729-1a02-4ab0-a547-43e5b27668f0]   Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 664)
+I, [2022-03-27T17:12:41.589334 #172496]  INFO -- : [26033729-1a02-4ab0-a547-43e5b27668f0] Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 850)
+I, [2022-03-27T17:12:42.294813 #172496]  INFO -- : [e5040605-cfc8-4f38-843e-d0c114dc2e75] Started GET "/games/join/" for 136.37.148.102 at 2022-03-27 17:12:42 +0000
+I, [2022-03-27T17:12:42.296010 #172496]  INFO -- : [e5040605-cfc8-4f38-843e-d0c114dc2e75] Processing by GamesController#join as HTML
+I, [2022-03-27T17:12:42.302047 #172496]  INFO -- : [e5040605-cfc8-4f38-843e-d0c114dc2e75]   Rendered games/join.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1168)
+I, [2022-03-27T17:12:42.303290 #172496]  INFO -- : [e5040605-cfc8-4f38-843e-d0c114dc2e75]   Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1493)
+I, [2022-03-27T17:12:42.303649 #172496]  INFO -- : [e5040605-cfc8-4f38-843e-d0c114dc2e75] Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 1919)
+I, [2022-03-27T17:12:47.091338 #172496]  INFO -- : [c104562c-6147-4f1a-8a77-ac0c45eb4676] Started POST "/games/join" for 136.37.148.102 at 2022-03-27 17:12:47 +0000
+I, [2022-03-27T17:12:47.092950 #172496]  INFO -- : [c104562c-6147-4f1a-8a77-ac0c45eb4676] Processing by GamesController#enter as TURBO_STREAM
+I, [2022-03-27T17:12:47.093193 #172496]  INFO -- : [c104562c-6147-4f1a-8a77-ac0c45eb4676]   Parameters: {"authenticity_token"=>"[FILTERED]", "game_code"=>"onxc", "commit"=>"submit"}
+I, [2022-03-27T17:12:47.094814 #172496]  INFO -- : [c104562c-6147-4f1a-8a77-ac0c45eb4676] Redirected to http://www.assassinshub.com/games/join
+I, [2022-03-27T17:12:47.097035 #172496]  INFO -- : [c104562c-6147-4f1a-8a77-ac0c45eb4676] Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 341)
+I, [2022-03-27T17:12:47.133012 #172496]  INFO -- : [d771c406-9bfd-441b-8385-0a0d1f9bd1ea] Started GET "/games/join" for 136.37.148.102 at 2022-03-27 17:12:47 +0000
+I, [2022-03-27T17:12:47.134666 #172496]  INFO -- : [d771c406-9bfd-441b-8385-0a0d1f9bd1ea] Processing by GamesController#join as TURBO_STREAM
+I, [2022-03-27T17:12:47.138321 #172496]  INFO -- : [d771c406-9bfd-441b-8385-0a0d1f9bd1ea]   Rendered games/join.html.erb within layouts/application (Duration: 2.2ms | Allocations: 370)
+I, [2022-03-27T17:12:47.139897 #172496]  INFO -- : [d771c406-9bfd-441b-8385-0a0d1f9bd1ea]   Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 748)
+I, [2022-03-27T17:12:47.140334 #172496]  INFO -- : [d771c406-9bfd-441b-8385-0a0d1f9bd1ea] Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1186)
+I, [2022-03-27T17:12:53.676972 #172496]  INFO -- : [a963b325-1623-46a5-a220-a494b4f83c49] Started GET "/games" for 136.37.148.102 at 2022-03-27 17:12:53 +0000
+I, [2022-03-27T17:12:53.678876 #172496]  INFO -- : [a963b325-1623-46a5-a220-a494b4f83c49] Processing by GamesController#index as HTML
+I, [2022-03-27T17:12:53.681419 #172496]  INFO -- : [a963b325-1623-46a5-a220-a494b4f83c49]   Rendered games/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 322)
+I, [2022-03-27T17:12:53.682619 #172496]  INFO -- : [a963b325-1623-46a5-a220-a494b4f83c49]   Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 651)
+I, [2022-03-27T17:12:53.682949 #172496]  INFO -- : [a963b325-1623-46a5-a220-a494b4f83c49] Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 837)
+I, [2022-03-27T17:12:56.475775 #172496]  INFO -- : [11edbc6a-c627-4cde-9a62-8b87c09014d1] Started GET "/games/join/" for 136.37.148.102 at 2022-03-27 17:12:56 +0000
+I, [2022-03-27T17:12:56.477137 #172496]  INFO -- : [11edbc6a-c627-4cde-9a62-8b87c09014d1] Processing by GamesController#join as HTML
+I, [2022-03-27T17:12:56.480322 #172496]  INFO -- : [11edbc6a-c627-4cde-9a62-8b87c09014d1]   Rendered games/join.html.erb within layouts/application (Duration: 2.1ms | Allocations: 370)
+I, [2022-03-27T17:12:56.481543 #172496]  INFO -- : [11edbc6a-c627-4cde-9a62-8b87c09014d1]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 695)
+I, [2022-03-27T17:12:56.481927 #172496]  INFO -- : [11edbc6a-c627-4cde-9a62-8b87c09014d1] Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1044)
+I, [2022-03-27T17:13:03.540412 #172496]  INFO -- : [c64355ea-1c24-4876-bca9-9d6370195658] Started POST "/games/join" for 136.37.148.102 at 2022-03-27 17:13:03 +0000
+I, [2022-03-27T17:13:03.542725 #172496]  INFO -- : [c64355ea-1c24-4876-bca9-9d6370195658] Processing by GamesController#enter as TURBO_STREAM
+I, [2022-03-27T17:13:03.543218 #172496]  INFO -- : [c64355ea-1c24-4876-bca9-9d6370195658]   Parameters: {"authenticity_token"=>"[FILTERED]", "game_code"=>"onxc2022", "commit"=>"submit"}
+I, [2022-03-27T17:13:03.546437 #172496]  INFO -- : [c64355ea-1c24-4876-bca9-9d6370195658] Redirected to http://www.assassinshub.com/games/3/signup
+I, [2022-03-27T17:13:03.546985 #172496]  INFO -- : [c64355ea-1c24-4876-bca9-9d6370195658] Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 331)
+I, [2022-03-27T17:13:03.582342 #172496]  INFO -- : [b37c8dbd-94e6-4a9b-ad74-b1d7988bea5c] Started GET "/games/3/signup" for 136.37.148.102 at 2022-03-27 17:13:03 +0000
+I, [2022-03-27T17:13:03.583802 #172496]  INFO -- : [b37c8dbd-94e6-4a9b-ad74-b1d7988bea5c] Processing by GamesController#signup as TURBO_STREAM
+I, [2022-03-27T17:13:03.583967 #172496]  INFO -- : [b37c8dbd-94e6-4a9b-ad74-b1d7988bea5c]   Parameters: {"id"=>"3"}
+I, [2022-03-27T17:13:03.591458 #172496]  INFO -- : [b37c8dbd-94e6-4a9b-ad74-b1d7988bea5c]   Rendered games/signup.html.erb within layouts/application (Duration: 4.0ms | Allocations: 597)
+I, [2022-03-27T17:13:03.594614 #172496]  INFO -- : [b37c8dbd-94e6-4a9b-ad74-b1d7988bea5c]   Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 925)
+I, [2022-03-27T17:13:03.595261 #172496]  INFO -- : [b37c8dbd-94e6-4a9b-ad74-b1d7988bea5c] Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.3ms | Allocations: 1579)
+I, [2022-03-27T17:13:09.558351 #172496]  INFO -- : [43dc0af0-8102-4501-82c9-5e6adec95437] Started POST "/players" for 136.37.148.102 at 2022-03-27 17:13:09 +0000
+I, [2022-03-27T17:13:09.559756 #172496]  INFO -- : [43dc0af0-8102-4501-82c9-5e6adec95437] Processing by PlayersController#create as TURBO_STREAM
+I, [2022-03-27T17:13:09.559940 #172496]  INFO -- : [43dc0af0-8102-4501-82c9-5e6adec95437]   Parameters: {"authenticity_token"=>"[FILTERED]", "player"=>{"name"=>"josh", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+I, [2022-03-27T17:13:09.571793 #172496]  INFO -- : [43dc0af0-8102-4501-82c9-5e6adec95437] Redirected to http://www.assassinshub.com/games/3
+I, [2022-03-27T17:13:09.572241 #172496]  INFO -- : [43dc0af0-8102-4501-82c9-5e6adec95437] Completed 302 Found in 12ms (ActiveRecord: 3.4ms | Allocations: 2584)
+I, [2022-03-27T17:13:09.619979 #172496]  INFO -- : [ea1f8052-9c56-4d67-96d2-ee2e66f21409] Started GET "/games/3" for 136.37.148.102 at 2022-03-27 17:13:09 +0000
+I, [2022-03-27T17:13:09.621530 #172496]  INFO -- : [ea1f8052-9c56-4d67-96d2-ee2e66f21409] Processing by GamesController#show as TURBO_STREAM
+I, [2022-03-27T17:13:09.621680 #172496]  INFO -- : [ea1f8052-9c56-4d67-96d2-ee2e66f21409]   Parameters: {"id"=>"3"}
+I, [2022-03-27T17:13:09.626940 #172496]  INFO -- : [ea1f8052-9c56-4d67-96d2-ee2e66f21409]   Rendered games/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 673)
+I, [2022-03-27T17:13:09.628060 #172496]  INFO -- : [ea1f8052-9c56-4d67-96d2-ee2e66f21409]   Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1006)
+I, [2022-03-27T17:13:09.628369 #172496]  INFO -- : [ea1f8052-9c56-4d67-96d2-ee2e66f21409] Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 2048)
+I, [2022-03-27T17:13:13.430789 #172496]  INFO -- : [e5091c70-a71c-4ec9-8e73-dbad14e77fe0] Started GET "/games" for 136.37.148.102 at 2022-03-27 17:13:13 +0000
+I, [2022-03-27T17:13:13.431732 #172496]  INFO -- : [e5091c70-a71c-4ec9-8e73-dbad14e77fe0] Processing by GamesController#index as HTML
+I, [2022-03-27T17:13:13.433608 #172496]  INFO -- : [e5091c70-a71c-4ec9-8e73-dbad14e77fe0]   Rendered games/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 334)
+I, [2022-03-27T17:13:13.434745 #172496]  INFO -- : [e5091c70-a71c-4ec9-8e73-dbad14e77fe0]   Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 663)
+I, [2022-03-27T17:13:13.435129 #172496]  INFO -- : [e5091c70-a71c-4ec9-8e73-dbad14e77fe0] Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 849)
+I, [2022-03-27T17:13:14.673609 #172496]  INFO -- : [0e78ca0f-22bf-4767-a507-c848c052753b] Started GET "/games/join/" for 136.37.148.102 at 2022-03-27 17:13:14 +0000
+I, [2022-03-27T17:13:14.676177 #172496]  INFO -- : [0e78ca0f-22bf-4767-a507-c848c052753b] Processing by GamesController#join as HTML
+I, [2022-03-27T17:13:14.678020 #172496]  INFO -- : [0e78ca0f-22bf-4767-a507-c848c052753b] Redirected to http://www.assassinshub.com/games/3
+I, [2022-03-27T17:13:14.679815 #172496]  INFO -- : [0e78ca0f-22bf-4767-a507-c848c052753b] Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 314)
+I, [2022-03-27T17:13:14.716547 #172496]  INFO -- : [63ff5df9-7788-472c-8c73-a9da51f6e548] Started GET "/games/3" for 136.37.148.102 at 2022-03-27 17:13:14 +0000
+I, [2022-03-27T17:13:14.717924 #172496]  INFO -- : [63ff5df9-7788-472c-8c73-a9da51f6e548] Processing by GamesController#show as HTML
+I, [2022-03-27T17:13:14.718064 #172496]  INFO -- : [63ff5df9-7788-472c-8c73-a9da51f6e548]   Parameters: {"id"=>"3"}
+I, [2022-03-27T17:13:14.721995 #172496]  INFO -- : [63ff5df9-7788-472c-8c73-a9da51f6e548]   Rendered games/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+I, [2022-03-27T17:13:14.723415 #172496]  INFO -- : [63ff5df9-7788-472c-8c73-a9da51f6e548]   Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 445)
+I, [2022-03-27T17:13:14.723822 #172496]  INFO -- : [63ff5df9-7788-472c-8c73-a9da51f6e548] Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 1207)
+I, [2022-03-27T17:13:16.133886 #172496]  INFO -- : [8522f347-3061-4f6a-af62-b0d3505b7eec] Started GET "/games" for 136.37.148.102 at 2022-03-27 17:13:16 +0000
+I, [2022-03-27T17:13:16.135374 #172496]  INFO -- : [8522f347-3061-4f6a-af62-b0d3505b7eec] Processing by GamesController#index as HTML
+I, [2022-03-27T17:13:16.137639 #172496]  INFO -- : [8522f347-3061-4f6a-af62-b0d3505b7eec]   Rendered games/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 325)
+I, [2022-03-27T17:13:16.138999 #172496]  INFO -- : [8522f347-3061-4f6a-af62-b0d3505b7eec]   Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 654)
+I, [2022-03-27T17:13:16.139457 #172496]  INFO -- : [8522f347-3061-4f6a-af62-b0d3505b7eec] Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 840)
+I, [2022-03-27T17:13:17.840873 #172496]  INFO -- : [1a4d7332-cd68-4405-afd9-e05506551523] Started POST "/game/clear" for 136.37.148.102 at 2022-03-27 17:13:17 +0000
+I, [2022-03-27T17:13:17.846466 #172496]  INFO -- : [1a4d7332-cd68-4405-afd9-e05506551523] Processing by GamesController#clear as TURBO_STREAM
+I, [2022-03-27T17:13:17.846852 #172496]  INFO -- : [1a4d7332-cd68-4405-afd9-e05506551523]   Parameters: {"authenticity_token"=>"[FILTERED]"}
+I, [2022-03-27T17:13:17.848077 #172496]  INFO -- : [1a4d7332-cd68-4405-afd9-e05506551523] No template found for GamesController#clear, rendering head :no_content
+I, [2022-03-27T17:13:17.848394 #172496]  INFO -- : [1a4d7332-cd68-4405-afd9-e05506551523] Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 491)
+I, [2022-03-27T17:13:18.784222 #172496]  INFO -- : [4f6bbc55-2bd3-49d3-9649-d64f614ffed6] Started GET "/games/join/" for 136.37.148.102 at 2022-03-27 17:13:18 +0000
+I, [2022-03-27T17:13:18.785550 #172496]  INFO -- : [4f6bbc55-2bd3-49d3-9649-d64f614ffed6] Processing by GamesController#join as HTML
+I, [2022-03-27T17:13:18.788477 #172496]  INFO -- : [4f6bbc55-2bd3-49d3-9649-d64f614ffed6]   Rendered games/join.html.erb within layouts/application (Duration: 1.8ms | Allocations: 381)
+I, [2022-03-27T17:13:18.789673 #172496]  INFO -- : [4f6bbc55-2bd3-49d3-9649-d64f614ffed6]   Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 706)
+I, [2022-03-27T17:13:18.790040 #172496]  INFO -- : [4f6bbc55-2bd3-49d3-9649-d64f614ffed6] Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1054)
+I, [2022-03-27T17:13:22.384771 #172496]  INFO -- : [f6c1450c-cebd-43d7-a7f9-75c80145d0a8] Started POST "/games/join" for 136.37.148.102 at 2022-03-27 17:13:22 +0000
+I, [2022-03-27T17:13:22.386217 #172496]  INFO -- : [f6c1450c-cebd-43d7-a7f9-75c80145d0a8] Processing by GamesController#enter as TURBO_STREAM
+I, [2022-03-27T17:13:22.386384 #172496]  INFO -- : [f6c1450c-cebd-43d7-a7f9-75c80145d0a8]   Parameters: {"authenticity_token"=>"[FILTERED]", "game_code"=>"test", "commit"=>"submit"}
+I, [2022-03-27T17:13:22.388141 #172496]  INFO -- : [f6c1450c-cebd-43d7-a7f9-75c80145d0a8] Redirected to http://www.assassinshub.com/games/join
+I, [2022-03-27T17:13:22.388413 #172496]  INFO -- : [f6c1450c-cebd-43d7-a7f9-75c80145d0a8] Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 324)
+I, [2022-03-27T17:13:22.431174 #172496]  INFO -- : [f1ac04b5-2c92-4429-a7d5-71b014d421e5] Started GET "/games/join" for 136.37.148.102 at 2022-03-27 17:13:22 +0000
+I, [2022-03-27T17:13:22.432707 #172496]  INFO -- : [f1ac04b5-2c92-4429-a7d5-71b014d421e5] Processing by GamesController#join as TURBO_STREAM
+I, [2022-03-27T17:13:22.450163 #172496]  INFO -- : [f1ac04b5-2c92-4429-a7d5-71b014d421e5]   Rendered games/join.html.erb within layouts/application (Duration: 16.1ms | Allocations: 370)
+I, [2022-03-27T17:13:22.452085 #172496]  INFO -- : [f1ac04b5-2c92-4429-a7d5-71b014d421e5]   Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 702)
+I, [2022-03-27T17:13:22.452608 #172496]  INFO -- : [f1ac04b5-2c92-4429-a7d5-71b014d421e5] Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.2ms | Allocations: 1046)
+I, [2022-03-27T17:13:30.783965 #172496]  INFO -- : [54fe5d52-b02f-4f1d-8032-77c3e991b24e] Started POST "/games/join" for 136.37.148.102 at 2022-03-27 17:13:30 +0000
+I, [2022-03-27T17:13:30.785592 #172496]  INFO -- : [54fe5d52-b02f-4f1d-8032-77c3e991b24e] Processing by GamesController#enter as TURBO_STREAM
+I, [2022-03-27T17:13:30.785858 #172496]  INFO -- : [54fe5d52-b02f-4f1d-8032-77c3e991b24e]   Parameters: {"authenticity_token"=>"[FILTERED]", "game_code"=>"onxc2022", "commit"=>"submit"}
+I, [2022-03-27T17:13:30.787827 #172496]  INFO -- : [54fe5d52-b02f-4f1d-8032-77c3e991b24e] Redirected to http://www.assassinshub.com/games/3/signup
+I, [2022-03-27T17:13:30.788238 #172496]  INFO -- : [54fe5d52-b02f-4f1d-8032-77c3e991b24e] Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 321)
+I, [2022-03-27T17:13:30.829308 #172496]  INFO -- : [feeda262-5d3c-4193-9b1c-54be53d31727] Started GET "/games/3/signup" for 136.37.148.102 at 2022-03-27 17:13:30 +0000
+I, [2022-03-27T17:13:30.830930 #172496]  INFO -- : [feeda262-5d3c-4193-9b1c-54be53d31727] Processing by GamesController#signup as TURBO_STREAM
+I, [2022-03-27T17:13:30.831241 #172496]  INFO -- : [feeda262-5d3c-4193-9b1c-54be53d31727]   Parameters: {"id"=>"3"}
+I, [2022-03-27T17:13:30.835394 #172496]  INFO -- : [feeda262-5d3c-4193-9b1c-54be53d31727]   Rendered games/signup.html.erb within layouts/application (Duration: 1.4ms | Allocations: 340)
+I, [2022-03-27T17:13:30.839853 #172496]  INFO -- : [feeda262-5d3c-4193-9b1c-54be53d31727]   Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 668)
+I, [2022-03-27T17:13:30.843036 #172496]  INFO -- : [feeda262-5d3c-4193-9b1c-54be53d31727] Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.4ms | Allocations: 1116)
+I, [2022-03-27T17:13:36.134335 #172496]  INFO -- : [75e489b2-f3b2-4ccb-882d-82ca91dc1537] Started POST "/players" for 136.37.148.102 at 2022-03-27 17:13:36 +0000
+I, [2022-03-27T17:13:36.136913 #172496]  INFO -- : [75e489b2-f3b2-4ccb-882d-82ca91dc1537] Processing by PlayersController#create as TURBO_STREAM
+I, [2022-03-27T17:13:36.137220 #172496]  INFO -- : [75e489b2-f3b2-4ccb-882d-82ca91dc1537]   Parameters: {"authenticity_token"=>"[FILTERED]", "player"=>{"name"=>"Josh", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+I, [2022-03-27T17:13:36.141619 #172496]  INFO -- : [75e489b2-f3b2-4ccb-882d-82ca91dc1537] Redirected to 
+I, [2022-03-27T17:13:36.142153 #172496]  INFO -- : [75e489b2-f3b2-4ccb-882d-82ca91dc1537] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 712)
+F, [2022-03-27T17:13:36.142858 #172496] FATAL -- : [75e489b2-f3b2-4ccb-882d-82ca91dc1537]   
+[75e489b2-f3b2-4ccb-882d-82ca91dc1537] ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://www.assassinshub.comgames/signup", pass allow_other_host: true to redirect anyway.):
+[75e489b2-f3b2-4ccb-882d-82ca91dc1537]   
+[75e489b2-f3b2-4ccb-882d-82ca91dc1537] app/controllers/players_controller.rb:15:in `create'
+I, [2022-03-27T17:25:59.092926 #172496]  INFO -- : [bc2640cf-99a0-4188-86e2-34542510e9cb] Started HEAD "/" for 216.245.221.82 at 2022-03-27 17:25:59 +0000
+I, [2022-03-27T17:25:59.093877 #172496]  INFO -- : [bc2640cf-99a0-4188-86e2-34542510e9cb] Processing by GamesController#index as HTML
+I, [2022-03-27T17:25:59.095110 #172496]  INFO -- : [bc2640cf-99a0-4188-86e2-34542510e9cb]   Rendered games/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 232)
+I, [2022-03-27T17:25:59.095885 #172496]  INFO -- : [bc2640cf-99a0-4188-86e2-34542510e9cb]   Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 561)
+I, [2022-03-27T17:25:59.096057 #172496]  INFO -- : [bc2640cf-99a0-4188-86e2-34542510e9cb] Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 741)
+I, [2022-03-27T17:40:59.159836 #172496]  INFO -- : [48e4ca7a-5518-4a99-82fd-c8fbe5b674d0] Started HEAD "/" for 216.245.221.82 at 2022-03-27 17:40:59 +0000
+I, [2022-03-27T17:40:59.161985 #172496]  INFO -- : [48e4ca7a-5518-4a99-82fd-c8fbe5b674d0] Processing by GamesController#index as HTML
+I, [2022-03-27T17:40:59.164474 #172496]  INFO -- : [48e4ca7a-5518-4a99-82fd-c8fbe5b674d0]   Rendered games/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 232)
+I, [2022-03-27T17:40:59.165641 #172496]  INFO -- : [48e4ca7a-5518-4a99-82fd-c8fbe5b674d0]   Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 561)
+I, [2022-03-27T17:40:59.165916 #172496]  INFO -- : [48e4ca7a-5518-4a99-82fd-c8fbe5b674d0] Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 741)
+I, [2022-03-27T17:50:56.901854 #172496]  INFO -- : [6fbfa561-d011-487d-a2ee-9cdc79f8c0e3] Started GET "/games/join" for 136.37.148.102 at 2022-03-27 17:50:56 +0000
+I, [2022-03-27T17:50:56.904832 #172496]  INFO -- : [6fbfa561-d011-487d-a2ee-9cdc79f8c0e3] Processing by GamesController#join as HTML
+I, [2022-03-27T17:50:56.914525 #172496]  INFO -- : [6fbfa561-d011-487d-a2ee-9cdc79f8c0e3]   Rendered games/join.html.erb within layouts/application (Duration: 7.5ms | Allocations: 527)
+I, [2022-03-27T17:50:56.916040 #172496]  INFO -- : [6fbfa561-d011-487d-a2ee-9cdc79f8c0e3]   Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 852)
+I, [2022-03-27T17:50:56.916521 #172496]  INFO -- : [6fbfa561-d011-487d-a2ee-9cdc79f8c0e3] Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 1.2ms | Allocations: 1192)
+I, [2022-03-27T17:50:56.992781 #172496]  INFO -- : [6d62c7e9-7be2-4880-80f0-ddd6240986fe] Started GET "/games/join" for 136.37.148.102 at 2022-03-27 17:50:56 +0000
+I, [2022-03-27T17:50:56.994293 #172496]  INFO -- : [6d62c7e9-7be2-4880-80f0-ddd6240986fe] Processing by GamesController#join as HTML
+I, [2022-03-27T17:50:56.998543 #172496]  INFO -- : [6d62c7e9-7be2-4880-80f0-ddd6240986fe]   Rendered games/join.html.erb within layouts/application (Duration: 2.4ms | Allocations: 370)
+I, [2022-03-27T17:50:57.000564 #172496]  INFO -- : [6d62c7e9-7be2-4880-80f0-ddd6240986fe]   Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 695)
+I, [2022-03-27T17:50:57.001293 #172496]  INFO -- : [6d62c7e9-7be2-4880-80f0-ddd6240986fe] Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1040)
+I, [2022-03-27T17:50:58.556074 #172496]  INFO -- : [3aa343c1-b68e-435c-9880-c48e9ced87bf] Started GET "/games/join" for 136.37.148.102 at 2022-03-27 17:50:58 +0000
+I, [2022-03-27T17:50:58.557308 #172496]  INFO -- : [3aa343c1-b68e-435c-9880-c48e9ced87bf] Processing by GamesController#join as HTML
+I, [2022-03-27T17:50:58.560564 #172496]  INFO -- : [3aa343c1-b68e-435c-9880-c48e9ced87bf]   Rendered games/join.html.erb within layouts/application (Duration: 2.1ms | Allocations: 370)
+I, [2022-03-27T17:50:58.561685 #172496]  INFO -- : [3aa343c1-b68e-435c-9880-c48e9ced87bf]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 695)
+I, [2022-03-27T17:50:58.561997 #172496]  INFO -- : [3aa343c1-b68e-435c-9880-c48e9ced87bf] Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1061)
+I, [2022-03-27T17:51:01.511878 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d820bf5d1] Started GET "/games" for 136.37.148.102 at 2022-03-27 17:51:01 +0000
+I, [2022-03-27T17:51:01.513732 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d820bf5d1] Processing by GamesController#index as HTML
+I, [2022-03-27T17:51:01.516592 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d820bf5d1]   Rendered games/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 355)
+I, [2022-03-27T17:51:01.519222 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d820bf5d1]   Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 684)
+I, [2022-03-27T17:51:01.519947 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d820bf5d1] Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 870)
