@@ -5,12 +5,17 @@ class GamesController < ApplicationController
   end
 
   def create
+    if (params[:game][:game_code] == "") or (params[:player][:name] == "") or (params[:player][:password] == "") then
+      flash[:alert] = "need to fill all fields"
+      redirect_back_or_to "games/new_game", allow_other_host: true
+      return
+    end
     @game = Game.new(game_params)
     @creator = Player.new(player_params)
     # check if the gameid is unique
     if Game.find_by game_code: @game[:game_code] then
       flash[:alert] = "Game Code Taken"
-      redirect_to "games/new_game"
+      redirect_back_or_to "games/new_game", allow_other_host: true
       return
     else
       @game.save!
@@ -20,7 +25,7 @@ class GamesController < ApplicationController
       session[:current_player_id] = @creator[:id]
       session[:current_game_id] = @game[:id]
       flash[:notice] = "game created"
-      redirect_to games_path
+      redirect_back_or_to games_path, allow_other_host: true
     end
   end
 
@@ -32,7 +37,7 @@ class GamesController < ApplicationController
     end
     @game.delete
     flash[:notice] = "game has been deleted"
-    redirect_to games_path
+    redirect_back_or_to games_path, allow_other_host: true
   end
 
   def die
@@ -45,17 +50,17 @@ class GamesController < ApplicationController
     @player.delete
     flash[:notice] = "You Have Been Assassinated"
     reset_session
-    redirect_to games_path
+    redirect_back_or_to games_path, allow_other_host: true
   end
 
   def enter
     @game = Game.find_by game_code: params[:game_code]
     if @game.present? then
       session[:current_game_id] = @game[:id]
-      redirect_to "/games/#{@game[:id]}/signup"
+      redirect_back_or_to "/games/#{@game[:id]}/signup", allow_other_host: true
     else
       flash[:alert] = "Game Not Found"
-      redirect_to "/games/join"
+      redirect_back_or_to "/games/join", allow_other_host: true
     end
   end
 
@@ -65,7 +70,7 @@ class GamesController < ApplicationController
   def join
     if session[:current_game_id] && session[:current_player_id] then
       @game = Game.find_by id: session[:current_game_id]
-      redirect_to "/games/#{@game[:id]}"
+      redirect_back_or_to "/games/#{@game[:id]}", allow_other_host: true
       return
     end
   end
@@ -77,7 +82,7 @@ class GamesController < ApplicationController
     @killrequest = Killrequest.new(game_id: @game[:id], assassin_id: @player[:id], victim_id: @victim[:id])
     if Killrequest.find_by assassin_id: @player[:id], victim_id: @victim[:id]
       flash[:alert] = "already requested ask your victim to accept"
-      redirect_to "/games/#{@game[:id]}"
+      redirect_back_or_to "/games/#{@game[:id]}", allow_other_host: true
       return
     end
     @killrequest.save!
@@ -117,7 +122,7 @@ class GamesController < ApplicationController
     end
     @game.update_attribute(:is_active, true)
     flash[:notice] = "Game has started"
-    redirect_to games_path
+    redirect_back_or_to games_path, allow_other_host: true
   end
   
 end

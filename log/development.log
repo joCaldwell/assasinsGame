@@ -35577,3 +35577,239 @@ Processing by GamesController#join as HTML
 Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.3ms | Allocations: 4508)
 
 
+Started GET "/games/join" for ::1 at 2022-03-27 12:18:50 -0500
+Processing by GamesController#join as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/join.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/games/join.html.erb:7
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/join.html.erb:7
+  Rendered games/join.html.erb within layouts/application (Duration: 7.3ms | Allocations: 6489)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_notice.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8434)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.5ms | Allocations: 9714)
+
+
+Started GET "/games" for ::1 at 2022-03-27 12:18:52 -0500
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 537)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_notice.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2291)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 2558)
+
+
+Started GET "/games/join/" for ::1 at 2022-03-27 12:18:53 -0500
+Processing by GamesController#join as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/join.html.erb within layouts/application
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/join.html.erb:7
+  Rendered games/join.html.erb within layouts/application (Duration: 14.9ms | Allocations: 2163)
+  Rendered shared/_alert.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_notice.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 3907)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.7ms | Allocations: 4438)
+
+
+Started POST "/games/join" for ::1 at 2022-03-27 12:19:41 -0500
+Processing by GamesController#enter as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "game_code"=>"asdfff", "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/games_controller.rb:52:in `enter'
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."game_code" = ? LIMIT ?[0m  [["game_code", "asdfff"], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `enter'
+Redirected to http://localhost:3000/games/join/?
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms | Allocations: 4068)
+
+
+Started GET "/games/join/" for ::1 at 2022-03-27 12:19:41 -0500
+Processing by GamesController#join as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/join.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/join.html.erb:7
+  Rendered games/join.html.erb within layouts/application (Duration: 4.7ms | Allocations: 4231)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered shared/_notice.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6175)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 7379)
+
+
+Started GET "/games/join/" for ::1 at 2022-03-27 12:21:44 -0500
+Processing by GamesController#join as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/join.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/games/join.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/join.html.erb:7
+  Rendered games/join.html.erb within layouts/application (Duration: 9.5ms | Allocations: 6926)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_notice.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 8875)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 1.0ms | Allocations: 10153)
+
+
+Started GET "/games" for ::1 at 2022-03-27 12:21:46 -0500
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 510)
+  Rendered shared/_alert.html.erb (Duration: 0.4ms | Allocations: 29)
+  Rendered shared/_notice.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 2264)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 2531)
+
+
+Started GET "/games" for ::1 at 2022-03-27 12:41:09 -0500
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 592)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_notice.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2555)
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 3482)
+
+
+Started GET "/games/new_game/" for ::1 at 2022-03-27 12:41:11 -0500
+Processing by GamesController#new_game as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/games_controller.rb:92:in `new_game'
+  Rendering layout layouts/application.html.erb
+  Rendering games/new_game.html.erb within layouts/application
+  Rendered games/new_game.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1628)
+  Rendered shared/_alert.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered shared/_notice.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3491)
+Completed 200 OK in 71ms (Views: 9.0ms | ActiveRecord: 3.6ms | Allocations: 15477)
+
+
+Started POST "/games" for ::1 at 2022-03-27 12:41:15 -0500
+Processing by GamesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "game"=>{"game_code"=>"asd"}, "player"=>{"name"=>"dfff", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."game_code" = ? LIMIT ?[0m  [["game_code", "asd"], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/games_controller.rb:21:in `create'
+  [1m[36mGame Create (0.6ms)[0m  [1m[32mINSERT INTO "games" ("game_code", "is_active", "created_at", "updated_at", "creator_id") VALUES (?, ?, ?, ?, ?)[0m  [["game_code", "asd"], ["is_active", 0], ["created_at", "2022-03-27 17:41:15.464018"], ["updated_at", "2022-03-27 17:41:15.464018"], ["creator_id", nil]]
+  ↳ app/controllers/games_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/games_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/games_controller.rb:22:in `create'
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/games_controller.rb:22:in `create'
+Completed 422 Unprocessable Entity in 28ms (ActiveRecord: 5.3ms | Allocations: 13315)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/controllers/games_controller.rb:24:in `create'
+Started POST "/games" for ::1 at 2022-03-27 12:41:46 -0500
+Processing by GamesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "game"=>{"game_code"=>""}, "player"=>{"name"=>"", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."game_code" = ? LIMIT ?[0m  [["game_code", ""], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:16:in `create'
+Completed 422 Unprocessable Entity in 6ms (ActiveRecord: 0.2ms | Allocations: 1817)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Game code can't be blank):
+  
+app/controllers/games_controller.rb:21:in `create'
+Started GET "/games/new_game/" for ::1 at 2022-03-27 12:43:27 -0500
+Processing by GamesController#new_game as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/games_controller.rb:92:in `new_game'
+  Rendering layout layouts/application.html.erb
+  Rendering games/new_game.html.erb within layouts/application
+  Rendered games/new_game.html.erb within layouts/application (Duration: 4.3ms | Allocations: 982)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_notice.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2924)
+Completed 200 OK in 21ms (Views: 8.5ms | ActiveRecord: 1.2ms | Allocations: 11470)
+
+
+Started POST "/games" for ::1 at 2022-03-27 12:43:31 -0500
+Processing by GamesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "game"=>{"game_code"=>"asda"}, "player"=>{"name"=>"", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+Redirected to http://localhost:3000/games/new_game/?
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 428)
+
+
+Started GET "/games/new_game/" for ::1 at 2022-03-27 12:43:31 -0500
+Processing by GamesController#new_game as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/new_game.html.erb within layouts/application
+  Rendered games/new_game.html.erb within layouts/application (Duration: 2.3ms | Allocations: 767)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered shared/_notice.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2517)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2805)
+
+
+Started POST "/games" for ::1 at 2022-03-27 12:43:36 -0500
+Processing by GamesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "game"=>{"game_code"=>"fdsfd"}, "player"=>{"name"=>"sdfs", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+Redirected to http://localhost:3000/games/new_game/?
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+Started GET "/games/new_game/" for ::1 at 2022-03-27 12:43:36 -0500
+Processing by GamesController#new_game as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/new_game.html.erb within layouts/application
+  Rendered games/new_game.html.erb within layouts/application (Duration: 5.3ms | Allocations: 748)
+  Rendered shared/_alert.html.erb (Duration: 0.2ms | Allocations: 33)
+  Rendered shared/_notice.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2496)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 2760)
+
+
+Started POST "/games" for ::1 at 2022-03-27 12:43:40 -0500
+Processing by GamesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "game"=>{"game_code"=>""}, "player"=>{"name"=>"sdfsdf", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+Redirected to http://localhost:3000/games/new_game/?
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 401)
+
+
+Started GET "/games/new_game/" for ::1 at 2022-03-27 12:43:40 -0500
+Processing by GamesController#new_game as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/new_game.html.erb within layouts/application
+  Rendered games/new_game.html.erb within layouts/application (Duration: 1.6ms | Allocations: 760)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered shared/_notice.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2508)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2772)
+
+
+Started POST "/games" for ::1 at 2022-03-27 12:43:46 -0500
+Processing by GamesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "game"=>{"game_code"=>"test"}, "player"=>{"name"=>"tset", "password"=>"[FILTERED]"}, "commit"=>"submit"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."game_code" = ? LIMIT ?[0m  [["game_code", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:16:in `create'
+Redirected to http://localhost:3000/games/new_game/?
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms | Allocations: 1455)
+
+
+Started GET "/games/new_game/" for ::1 at 2022-03-27 12:43:46 -0500
+Processing by GamesController#new_game as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/new_game.html.erb within layouts/application
+  Rendered games/new_game.html.erb within layouts/application (Duration: 1.4ms | Allocations: 766)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered shared/_notice.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2514)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
