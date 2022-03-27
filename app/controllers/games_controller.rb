@@ -25,7 +25,7 @@ class GamesController < ApplicationController
       session[:current_player_id] = @creator[:id]
       session[:current_game_id] = @game[:id]
       flash[:notice] = "game created"
-      redirect_back_or_to games_path, allow_other_host: true
+      redirect_to games_path, allow_other_host: true
     end
   end
 
@@ -36,8 +36,9 @@ class GamesController < ApplicationController
       player.delete
     end
     @game.delete
+    reset_session
     flash[:notice] = "game has been deleted"
-    redirect_back_or_to games_path, allow_other_host: true
+    redirect_to games_path, allow_other_host: true
   end
 
   def die
@@ -57,7 +58,7 @@ class GamesController < ApplicationController
     @game = Game.find_by game_code: params[:game_code]
     if @game.present? then
       session[:current_game_id] = @game[:id]
-      redirect_back_or_to "/games/#{@game[:id]}/signup", allow_other_host: true
+      redirect_to "/games/#{@game[:id]}/signup", allow_other_host: true
     else
       flash[:alert] = "Game Not Found"
       redirect_back_or_to "/games/join", allow_other_host: true
@@ -70,7 +71,7 @@ class GamesController < ApplicationController
   def join
     if session[:current_game_id] && session[:current_player_id] then
       @game = Game.find_by id: session[:current_game_id]
-      redirect_back_or_to "/games/#{@game[:id]}", allow_other_host: true
+      redirect_to "/games/#{@game[:id]}", allow_other_host: true
       return
     end
   end

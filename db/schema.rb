@@ -27,15 +27,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_09_022615) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "players", force: :cascade do |t|
-    t.integer "game_id"
-    t.string "name"
-    t.string "password"
-    t.string "target"
-    t.boolean "dead"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["game_id"], name: "index_players_on_game_id"
-  end
-
 end
