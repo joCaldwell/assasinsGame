@@ -320,3 +320,8 @@ I, [2022-03-27T17:51:01.513732 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d
 I, [2022-03-27T17:51:01.516592 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d820bf5d1]   Rendered games/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 355)
 I, [2022-03-27T17:51:01.519222 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d820bf5d1]   Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 684)
 I, [2022-03-27T17:51:01.519947 #172496]  INFO -- : [8984c755-cbcb-4306-a277-5f8d820bf5d1] Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 870)
+I, [2022-03-27T17:55:59.141622 #172496]  INFO -- : [91a2aa92-2c85-4c5d-b707-ca14df0e7294] Started HEAD "/" for 216.245.221.82 at 2022-03-27 17:55:59 +0000
+I, [2022-03-27T17:55:59.143082 #172496]  INFO -- : [91a2aa92-2c85-4c5d-b707-ca14df0e7294] Processing by GamesController#index as HTML
+I, [2022-03-27T17:55:59.145138 #172496]  INFO -- : [91a2aa92-2c85-4c5d-b707-ca14df0e7294]   Rendered games/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 232)
+I, [2022-03-27T17:55:59.146424 #172496]  INFO -- : [91a2aa92-2c85-4c5d-b707-ca14df0e7294]   Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 561)
+I, [2022-03-27T17:55:59.146793 #172496]  INFO -- : [91a2aa92-2c85-4c5d-b707-ca14df0e7294] Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 744)
